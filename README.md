@@ -1,2 +1,2 @@
-# frontend-basic
+# Frontend Basic
 Learn HTML, CSS, Javascript, Bootstrap, JQuery...
