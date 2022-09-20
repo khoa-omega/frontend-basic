@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 03 - Question 03</title>
+    <style>
+        table, th, td {
+            border: 2px solid brown;
+            border-collapse: collapse;
+        }
+
+        table {
+            cursor: pointer;
+        }
+
+        th {
+            background-color: lightsalmon;
+            padding: 8px 16px;
+            color: brown;
+        }
+
+        td {
+            color: #2c3e50;
+            padding: 4px 8px;
+        }
+
+        /* pseudo element */
+        tr:nth-child(even) {
+            background-color: #f1c40f;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e67e22;
+        }
+
+        tr:hover {
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+        </tr>
+        <tr>
+            <td>Trần Anh Đức</td>
+            <td>03/08/1993</td>
+            <td>Nam</td>
+        </tr>
+        <tr>
+            <td>Kiều Thị Thu Hằng</td>
+            <td>04/09/1991</td>
+            <td>Nữ</td>
+        </tr>
+        <tr>
+            <td>Vương Thị Lê Na</td>
+            <td>06/10/1991</td>
+            <td>Nữ</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th rowspan="2">STT</th>
+            <th rowspan="2">Họ tên</th>
+            <th colspan="2">Giới tính</th>
+            <th rowspan="2">Chức vụ</th>
+        </tr>
+        <tr>
+            <th>Nam</th>
+            <th>Nữ</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Trần Đức Anh</td>
+            <td>X</td>
+            <td></td>
+            <td>Lớp Trưởng</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>GVHD</th>
+            <th>Lịch gặp GVHD</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Lê Thu Trang</td>
+            <td rowspan="3">Th.S Hồ Sỹ Tuy Đức</td>
+            <td rowspan="3">08/03/2018</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nguyễn Thị Diễm</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Phạm Thị Hồng Đào</td>
+        </tr>
+    </table>
+</body>
+</html>
