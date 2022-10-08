@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 1 - HTML</title>
+    </head>
+    <body style="margin-bottom: 100px;">
+        <!--
+            TẤT TẦN TẬT VỀ HTML 5
+            - Một số kiến thức cơ bản về HTML: https://webcoban.vn/html/default.html
+            - Cấu trúc cơ bản của một tệp tin HTML: https://webcoban.vn/html/cau-truc-co-ban-cua-mot-tap-tin-html.html
+            - Chi tiết về HTML Element (thẻ): https://webcoban.vn/html/phan-tu-html-html-element-la-gi.html
+            - Chi tiết về HTML Attribute (thuộc tính): https://webcoban.vn/html/khai-niem-thuoc-tinh-cua-phan-tu-html.html
+        -->
+
+        <!--
+            Heading tags: https://webcoban.vn/html/the-tieu-de-heading-trong-html.html
+        -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!--
+            PARAGRAPH TAGS: https://webcoban.vn/html/doan-van-ban-trong-html.html
+        -->
+        <!--
+            Thẻ p: Tự động xóa hết những dấu cách (space), xuống dòng (enter) dư thừa giữa các từ trong văn bản.
+            => 2 từ trong văn bản cách nhau tối đa 1 dấu cách.
+        -->
+        <p>This    is    
+            a    paragraph</p>
+
+        <!-- pre: Giữ nguyên định dạng cho văn bản (giống như lúc soạn thảo).  -->
+        <pre>This     is    
+            another    paragraph</pre>
+
+        <!--
+            FORMATTING TAGS: https://webcoban.vn/html/cac-the-dinh-dang-van-ban-trong-html.html
+        -->
+        <!--
+            Thẻ b: In đậm văn bản.
+            Chú ý: Khi chuyển văn bản thành giọng nói, ngữ điệu không bị thay đổi.
+        -->
+        <b>This text is bold.</b>
+        <br>
+        <!--
+            Thẻ strong: In đậm văn bản
+            Chú ý: Khi chuyển văn bản thành giọng nói, ngữ điệu bị thay đổi (đọc nhấn mạnh).
+        -->
+        <strong>This text is strong.</strong>
+        <br>
+
+        <!--
+            Thẻ i: In nghiêng văn bản
+            Chú ý: Khi chuyển văn bản thành giọng nói, ngữ điệu không bị thay đổi
+        -->
+        <i>This text is italic.</i>
+        <br>
+        <!--
+            Thẻ em: In nghiêng văn bản
+            Chú ý: Khi chuyển văn bản thành giọng nói, ngữ điệu bị thay đổi (đọc luyến).
+        -->
+        <em>This text is emphasized.</em>
+        <br>
+
+        <!-- Thẻ u: Gạch chân văn bản -->
+        <u>This text is underline.</u>
+        <br>
+
+        <!-- Thẻ del: Gạch ngang văn bản -->
+        <del>This text is deleted.</del>
+
+        <!-- Thẻ small: Định dạng chữ nhỏ hơn so với văn bản bình thường. -->
+        <p>HTML <small>SMALL</small> FORMATTING</p>
+
+        <!-- Thẻ big: Định dạng chữ lớn hơn so với văn bản bình thường. -->
+        <p>HTML <big>BIG</big> FORMATTING</p>
+
+        <!-- Thẻ mark: Đánh dấu màu nền nổi bật cho văn bản. -->
+        <p>HTML <mark>MARKED</mark> FORMATTING</p>
+
+        <!-- Thẻ subscript: Định dạng chữ nhỏ & nằm ở khoảng nửa dưới so với văn bản bình thường. -->
+        <p>Nước: H<sub>2</sub>O</p>
+
+        <!-- Thẻ superscript: Định dạng chữ nhỏ & nằm ở khoảng nửa trên so với văn bản bình thường. -->
+        <p>Hàm bậc 2: ax<sup>2</sup> + bx + c</p>
+
+        <!-- Thẻ define -->
+        <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+        <!-- Thẻ br: Ngắt dòng / xuống dòng. -->
+        <br>
+        <!-- Thẻ wbr: Ngắt từ -->
+        <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
+
+        <!-- Thẻ details & summary -->
+        <details>
+            <summary>Epcot Center</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </details>
+        <br>
+
+        <!-- Thẻ address: In nghiêng nội dung địa chỉ. -->
+        <address>
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <!-- Thẻ blockquote: Thụt lề văn bản được trích dẫn. -->
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+
+        <!-- Thẻ cite: In nghiêng tên của một tác phẩm. -->
+        <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+        <!-- Thẻ button: Tạo ra một button có thể nhận sự kiện click chuột. -->
+        <button type="button" onclick="alert('Chào cậu!')">Click here</button>
+
+        <!-- Thẻ meter & progress: Hiển thị tiến độ. -->
+        <p>Meter: Hiển thị trạng thái được load 1 lần.</p>
+        <meter min="0" max="100" value="75"></meter>
+        <p>Progress: Hiển thị trạng thái được cập nhật liên tục.</p>
+        <progress min="0" max="100" value="25"></progress>
+        <br>
+
+        <!--
+            Thẻ a: Tạo một liên kết đến trang web khác.
+            Chi tiết tại: https://webcoban.vn/html/cach-tao-mot-cai-lien-ket-link-trong-html.html
+        -->
+        <a href="http://google.com" target="_blank">Go to google.com</a>
+        <br><br>
+
+        <!-- OTHER TAGS -->
+        <!-- Thẻ img: Hiển thị hình ảnh lên trang web. -->
+        <!-- <img width="128px" height="128px" src="https://tenten.vn/tin-tuc/wp-content/uploads/2021/03/HTML5-la%CC%80-gi%CC%80-U%CC%9Bu-die%CC%82%CC%89m-no%CC%82%CC%89i-ba%CC%A3%CC%82t-cu%CC%89a-HTML5.jpg" alt="Đây là ảnh HTML 5"> -->
+
+        <!--
+            Thẻ iframe: Nhúng trang web khác vào trang web của mình.
+            Chi tiết tại: https://webcoban.vn/html/cach-chen-iframe-khung-trang-web-vao-trang-web.html
+        -->
+        <iframe src="./embeddable.html" frameborder="1">Embeddable</iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HLzJDpLWeas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe src="https://www.nhaccuatui.com/mh/normal/FvcglTISIMZK" width="620" height="382" frameborder="0" allowfullscreen allow="autoplay"></iframe> -->
+
+        <!--
+            Thẻ ol: ordered list & ul: unordered list.
+            Chi tiết tại: https://webcoban.vn/html/cach-tao-danh-sach-list-trong-html.html
+        -->
+        <!-- type: 1, A, a, I, i -->
+        <ol type="a">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <!-- list-style-type: [disc, square, circle] -->
+        <ul style="list-style-type: circle;">
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black Tea</li>
+                    <li>Green Tea
+                        <ul>
+                            <li>Black Tea</li>
+                            <li>Green Tea</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+
+        <!-- Thẻ dl -->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+        </dl>
+        <br>
+
+        <!-- INPUT TAGS:  -->
+        <!-- Text & Textarea -->
+        <label for="name">Nhập vào tên của bạn:</label>
+        <br>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="review">Đánh giá:</label>
+        <br>
+        <textarea id="review" rows="5" cols="30"></textarea>
+        <br>
+        <!-- Number -->
+        <label for="age">Nhập vào tuổi của bạn:</label>
+        <br>
+        <input type="number" name="age" id="age" min="1" max="1000" step="5" value="18">
+        <br>
+        <!-- Range -->
+        <label for="volume">Âm lượng</label>
+        <br>
+        <input type="range" name="volume" id="volume" min="1" max="10" value="2">
+        <br>
+        <!-- Email -->
+        <label for="email">Nhập vào email của bạn:</label>
+        <br>
+        <input type="email" name="email" id="email">
+        <br>
+        <!-- Password -->
+        <label for="password">Nhập vào mật khẩu:</label>
+        <br>
+        <input type="password" name="password" id="password">
+        <br>
+        <!-- File -->
+        <label for="file">Đổi ảnh đại diện:</label>
+        <br>
+        <input type="file" name="file" id="file" accept="image/*">
+        <br>
+        <!-- Date & Time & DateTime -->
+        <label for="date">Nhập vào ngày sinh:</label>
+        <br>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="time">Nhập vào giờ sinh:</label>
+        <br>
+        <input type="time" name="time" id="time" step="1">
+        <br>
+        <label for="datetime">Nhập vào ngày - giờ sinh:</label>
+        <br>
+        <input type="datetime-local" name="datetime" id="datetime" step="1">
+        <br>
+        <!-- Week & Month -->
+        <label for="week">Nhập vào tuần sinh:</label>
+        <br>
+        <input type="week" name="week" id="week">
+        <br>
+        <label for="month">Nhập vào tháng sinh:</label>
+        <br>
+        <input type="month" name="month" id="month">
+    </body>
+</html>
