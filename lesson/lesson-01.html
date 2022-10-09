@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lesson 1 - HTML</title>
+        <title>Lesson 1 - HTML 5</title>
     </head>
     <body style="margin-bottom: 100px;">
+        
         <!--
             TẤT TẦN TẬT VỀ HTML 5
             - Một số kiến thức cơ bản về HTML: https://webcoban.vn/html/default.html
@@ -15,9 +16,7 @@
             - Chi tiết về HTML Attribute (thuộc tính): https://webcoban.vn/html/khai-niem-thuoc-tinh-cua-phan-tu-html.html
         -->
 
-        <!--
-            Heading tags: https://webcoban.vn/html/the-tieu-de-heading-trong-html.html
-        -->
+        <!-- HEADING TAGs: https://webcoban.vn/html/the-tieu-de-heading-trong-html.html -->
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -25,31 +24,30 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
 
+        <!-- PARAGRAPH TAGs: https://webcoban.vn/html/doan-van-ban-trong-html.html -->
+
         <!--
-            PARAGRAPH TAGS: https://webcoban.vn/html/doan-van-ban-trong-html.html
-        -->
-        <!--
-            Thẻ p: Tự động xóa hết những dấu cách (space), xuống dòng (enter) dư thừa giữa các từ trong văn bản.
-            => 2 từ trong văn bản cách nhau tối đa 1 dấu cách.
+            Thẻ p: Tự động xóa hết những kí tự xuống dòng (enter) và những dấu cách (white space) dư thừa.
+            => 2 từ liên tiếp cách nhau tối đa 1 dấu cách.
         -->
         <p>This    is    
             a    paragraph</p>
 
-        <!-- pre: Giữ nguyên định dạng cho văn bản (giống như lúc soạn thảo).  -->
+        <!-- Thẻ pre: Giữ nguyên định dạng cho văn bản (giống như lúc soạn thảo).  -->
         <pre>This     is    
             another    paragraph</pre>
 
-        <!--
-            FORMATTING TAGS: https://webcoban.vn/html/cac-the-dinh-dang-van-ban-trong-html.html
-        -->
+        <!-- FORMATTING TAGs: https://webcoban.vn/html/cac-the-dinh-dang-van-ban-trong-html.html -->
+
         <!--
             Thẻ b: In đậm văn bản.
             Chú ý: Khi chuyển văn bản thành giọng nói, ngữ điệu không bị thay đổi.
         -->
         <b>This text is bold.</b>
         <br>
+
         <!--
-            Thẻ strong: In đậm văn bản
+            Thẻ strong: In đậm văn bản.
             Chú ý: Khi chuyển văn bản thành giọng nói, ngữ điệu bị thay đổi (đọc nhấn mạnh).
         -->
         <strong>This text is strong.</strong>
@@ -61,6 +59,7 @@
         -->
         <i>This text is italic.</i>
         <br>
+
         <!--
             Thẻ em: In nghiêng văn bản
             Chú ý: Khi chuyển văn bản thành giọng nói, ngữ điệu bị thay đổi (đọc luyến).
@@ -95,6 +94,7 @@
 
         <!-- Thẻ br: Ngắt dòng / xuống dòng. -->
         <br>
+
         <!-- Thẻ wbr: Ngắt từ -->
         <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
 
@@ -137,11 +137,15 @@
             Chi tiết tại: https://webcoban.vn/html/cach-tao-mot-cai-lien-ket-link-trong-html.html
         -->
         <a href="http://google.com" target="_blank">Go to google.com</a>
-        <br><br>
+        <br>
+        <br>
 
-        <!-- OTHER TAGS -->
+        <!-- OTHER TAGs -->
+
         <!-- Thẻ img: Hiển thị hình ảnh lên trang web. -->
-        <!-- <img width="128px" height="128px" src="https://tenten.vn/tin-tuc/wp-content/uploads/2021/03/HTML5-la%CC%80-gi%CC%80-U%CC%9Bu-die%CC%82%CC%89m-no%CC%82%CC%89i-ba%CC%A3%CC%82t-cu%CC%89a-HTML5.jpg" alt="Đây là ảnh HTML 5"> -->
+        <img width="128px" height="128px" src="https://www.w3.org/html/logo/img/mark-word-icon.png" alt="HTML5 logo.">
+        <br>
+        <br>
 
         <!--
             Thẻ iframe: Nhúng trang web khác vào trang web của mình.
@@ -155,6 +159,7 @@
             Thẻ ol: ordered list & ul: unordered list.
             Chi tiết tại: https://webcoban.vn/html/cach-tao-danh-sach-list-trong-html.html
         -->
+
         <!-- type: 1, A, a, I, i -->
         <ol type="a">
             <li>Coffee</li>
@@ -188,7 +193,8 @@
         </dl>
         <br>
 
-        <!-- INPUT TAGS:  -->
+        <!-- INPUT TAGs -->
+
         <!-- Text & Textarea -->
         <label for="name">Nhập vào tên của bạn:</label>
         <br>
@@ -198,31 +204,37 @@
         <br>
         <textarea id="review" rows="5" cols="30"></textarea>
         <br>
+
         <!-- Number -->
         <label for="age">Nhập vào tuổi của bạn:</label>
         <br>
         <input type="number" name="age" id="age" min="1" max="1000" step="5" value="18">
         <br>
+
         <!-- Range -->
         <label for="volume">Âm lượng</label>
         <br>
         <input type="range" name="volume" id="volume" min="1" max="10" value="2">
         <br>
+
         <!-- Email -->
         <label for="email">Nhập vào email của bạn:</label>
         <br>
         <input type="email" name="email" id="email">
         <br>
+
         <!-- Password -->
         <label for="password">Nhập vào mật khẩu:</label>
         <br>
         <input type="password" name="password" id="password">
         <br>
+
         <!-- File -->
         <label for="file">Đổi ảnh đại diện:</label>
         <br>
         <input type="file" name="file" id="file" accept="image/*">
         <br>
+
         <!-- Date & Time & DateTime -->
         <label for="date">Nhập vào ngày sinh:</label>
         <br>
@@ -236,6 +248,7 @@
         <br>
         <input type="datetime-local" name="datetime" id="datetime" step="1">
         <br>
+        
         <!-- Week & Month -->
         <label for="week">Nhập vào tuần sinh:</label>
         <br>
