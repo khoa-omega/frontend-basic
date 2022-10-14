@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 03 - Question 01</title>
-    <style>
+
+    <!-- Cách 1: Sử dụng position -->
+    <!-- <style>
         header {
             background-color: yellow;
             position: absolute;
@@ -14,6 +16,7 @@
             right: 0;
             height: 100px;
         }
+
         nav {
             background-color: red;
             position: absolute;
@@ -22,6 +25,7 @@
             width: 25%;
             bottom: 50px;
         }
+
         article {
             background-color: lightgray;
             position: absolute;
@@ -30,6 +34,7 @@
             left: 25%;
             bottom: 50px;
         }
+
         footer {
             background-color: black;
             position: absolute;
@@ -37,6 +42,43 @@
             right: 0;
             bottom: 0;
             height: 50px;
+        }
+    </style> -->
+
+    <!-- Cách 2: Sử dụng float -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            float: left;
+            background-color: yellow;
+        }
+
+        nav {
+            width: 25%;
+            height: 400px;
+            float: left;
+            background-color: red;
+        }
+
+        article {
+            width: 75%;
+            height: 400px;
+            float: left;
+            background-color: lightgray;
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            float: left;
+            background-color: black;
         }
     </style>
 </head>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 02 - Question 01</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="text-align: center;">Bài 01: Sử dụng các tag cơ bản</h1>
+            <p><b><u><big>Yêu cầu</big></u></b></p>
+            <p><b>Thiết kế trang web có nội dung như sau:</b></p>
+            <div style="text-align: center;">
+                <p>Lập trình Web</p>
+                <p>Chào mừng các bạn đến với ngôn ngữ HTML</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 style="text-align: center; color: darkgreen;">Bài 02: Sử dụng các tag cơ bản (tt)</h1>
+            <p style="color: blue"><b><u><big>Yêu cầu</big></u></b></p>
+            <p><b>Thiết kế trang web có nội dung như sau:</b></p>
+            <div style="text-align: center;">
+                <p style="color: blueviolet; background-color: pink;">MẸ !</p>
+                <div style="background-color: yellow;">
+                    <div style="display: inline-block; line-height: 0.5;">
+                        <div style="color: blue; display: inherit;">
+                            <p>Mẹ là cả một trời thương</p>
+                            <p>Mẹ là cả một thiên đường trần gian</p>
+                            <p>Công ơn cha mẹ tựa biển trời</p>
+                        </div>
+                        <hr>
+                        <div style="color: red; display: inherit;">
+                            <p>Làm sao báo hiếu hỡi người ơi?</p>
+                            <p>Nếu chưa báo hiếu đừng bất hiếu</p>
+                            <p>Bất hiếu làm ta khổ muôn đời</p>
+                        </div>
+                        <hr>
+                        <div style="color: darkgreen; display: inherit;">
+                            <p>Một đời vốn liếng mẹ trao</p>
+                            <p>Mẹ cho tất cả mẹ nào giữ riêng</p>
+                            <p>Mẹ theo con suốt hành trình con đi</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <h1 style="text-align: center; color: darkgreen;">Định dạng văn bản</h1>
+            <p>
+                <b><u>Hóa học:</u></b>
+                <i>Nước:</i>
+                <span style="color: red;">
+                    H<sub>2</sub>O;
+                </span>
+                <i>Axit Sunfuric:</i>
+                <span style="color: red;">
+                    H<sub>2</sub>SO<sub>4</sub>
+                </span>
+            </p>
+            <p>
+                <b><u>Toán học:</u></b>
+                <i>Phương trình bậc 2:</i>
+                <span style="color: red;">
+                    ax<sup>2</sup> + bx + c = 0
+                </span>
+            </p>
+            <p>
+                <b><u>Tin học:</u></b>
+                <i>Vòng lặp For:</i>
+                <pre style="background-color: lightgray;">
+                    
+                    For i = 0 To 10
+                        Tong = Tong + 1
+                    Next
+                </pre>
+            </p>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <h1 style="color: fuchsia; text-align: center;">Công ty Hoa tươi Nhân Ái</h1>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="./assets/rose.png" alt="Rose image">
+                <div style="width: 500px;">
+                    <ol>
+                        <li><span style="background-color: pink;">Giới thiệu:</span>
+                            <ul>
+                                <li>Thành lập ngày 25/05/2007</li>
+                                <li>Chuyên cung cấp các loại hoa tươi</li>
+                                <li>Có trên 20 cửa hàng bán lẻ tại TP. HCM</li>
+                                <li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+                            </ul>
+                            <hr>
+                        </li>
+                        <li><span style="background-color: pink;">Liên hệ:</span>
+                            <ul>
+                                <li>Điện thoại: 0987654321</li>
+                                <li>Địa chỉ: 227 Nguyễn Văn Cừ</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><span style="color: blueviolet;">&copy; Copyright:</span>
+                        <b><a href="#">Trung tâm Tin Học - Đại học Khoa học Tự Nhiên TP. HCM</a></b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <style>
+            table, th, td {
+                border: 2px solid blueviolet;
+                border-collapse: collapse;
+            }
+
+            table {
+                width: 400px;
+                background-color: white;
+            }
+
+            /* even, odd */
+            tr:nth-child(odd) {
+                background-color: #edbba0;
+            }
+
+            th, td {
+                padding: 8px 16px;
+            }
+
+            th {
+                color: white;
+                background-color: brown;
+            }
+        </style>
+        <div class="container" style="background-color: #edbba0; padding: 16px 0;">
+            <h1 style="color: brown; text-align: center;">Các món ngon Hà Nội</h1>
+            <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                <img width="160" height="139" src="https://i.pinimg.com/originals/f2/2f/55/f22f551ac50ddc001be5bc1fe5e256c0.jpg" alt="Food">
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên Món Ăn</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Bánh cuốn Thanh Trì</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Xôi Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Chả cá Lã Vọng</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Cháo cốc</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Bánh gai Ninh Giang</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Bún Thang Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Canh Lắng</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Vịt quay Lạng Sơn</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <br>
+
+        <style>
+            .parent {
+                border: 2px solid blue;
+                width: 400px;
+                height: 400px;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+
+                /* Sử dụng top-left hoặc transform */
+                /* Câu 1: Box ở giữa trung tâm */
+                /* transform: translate(150px, 150px); */
+
+                /* Câu 2: Box ở góc dưới phải */
+                /* transform: translate(300px, 300px); */
+
+                /* Câu 3: Nhìn hình */
+                /* transform: translate(150px, -100px); */
+
+                /* Căn giữa */
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <div class="parent">
+            <div class="box"></div>
+        </div>
+    </body>
+</html>

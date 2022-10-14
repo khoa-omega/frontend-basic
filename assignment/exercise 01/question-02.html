@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 01 - Question 02</title>
-</head>
-<body>
-    <div style="border: 2px solid red;padding: 70px 0">
-        <!-- <div style="border: 2px solid green;margin: 70px 0">I am vertically centered.</div> -->
-        <div style="border: 2px solid green;">I am vertically centered.</div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 01 - Question 02</title>
+        <style>
+            .border-green {
+                border: 2px solid green;
+            }
+
+            .border-red {
+                border: 2px solid red;
+            }
+
+            .margin-70 {
+                margin: 70px;
+            }
+
+            .padding-70 {
+                padding: 70px;
+            }
+
+            .padding-vertical-70 {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="border-green padding-70">
+            This element has a padding of 70px.
+        </div>
+
+        <br>
+
+        <div class="border-red padding-vertical-70">
+            <div class="border-green">
+                I am vertically centered.
+            </div>
+        </div>
+
+        <br>
+
+        <div class="border-red margin-70">
+            Div này sử dụng thuộc tính margin
+        </div>
+
+        <br>
+
+        <div class="border-red padding-70">
+            Div này sử dụng thuộc tính padding
+        </div>
+    </body>
 </html>
