@@ -257,5 +257,68 @@
         <label for="month">Nhập vào tháng sinh:</label>
         <br>
         <input type="month" name="month" id="month">
+
+        <!-- Radio button -->
+        <label>Nhập vào giới tính:</label>
+        <br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Nữ</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Nam</label>
+        <br>
+
+        <!-- Checkbox -->
+        <label>Chọn sở thích của bạn:</label>
+        <br>
+        <input type="checkbox" name="favorite" id="football">
+        <label for="football">Đá bóng</label>
+        <input type="checkbox" name="favorite" id="volleyball">
+        <label for="volleyball">Bóng chuyền</label>
+        <br>
+        
+        <!-- Select - Options -->
+        <label for="city">Chọn thành phố bạn đang sống:</label>
+        <select name="city" id="city" size="2" multiple>
+            <option value="1">Hà Nội</option>
+            <option value="2">Hà Nam</option>
+            <option value="3" selected>Bắc Ninh</option>
+            <option value="4">Bắc Giang</option>
+        </select>
+        <br>
+
+        <!-- Datalist -->
+        <label for="browser">Nhập vào trình duyệt bạn đang sử dụng:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br>
+        <br>
+
+        <!-- Fieldset & Legend & Submit -->
+        <form>
+            <fieldset>
+                <legend>Căn cước công dân:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" autofocus><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" autocomplete="on"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required><br><br>
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Reset">
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+
+        <!-- Thuộc tính title -->
+        <h2 title="Chào bạn, tôi là thẻ h2">Di chuyển chuột vào đây và giữ 1 giây.</h2> 
     </body>
 </html>
