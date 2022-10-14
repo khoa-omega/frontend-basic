@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 02 - CSS 3</title>
+    <style>
+        /* Chọn tất cả thẻ p */
+        p {
+            background-color: yellow;
+        }
+
+        /* Chọn tất cả phần tử có id là html */
+        #html {
+            font-size: 2em;
+        }
+
+        /* Chọn tất cả phần từ có class là web */
+        .web {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body style="margin-bottom: 100px;">
+    <!--
+        Cú pháp:
+        selector {
+            property: value;
+            property: value;
+            property: value;
+            ....
+        }
+    -->
+
+    <!--
+        Có 3 cách để nhúng CSS vào HTML
+        - Inline: Viết CSS trong thuộc tính style
+        - Internal: Viết CSS trong thẻ style
+        - External: Viết CSS trong .css file
+    -->
+    
+    <!-- Inline CSS -->
+    <p>Tài liệu học HTML</p>
+    <p style="color: red;">Tài liệu học CSS</p>
+    <p>Tài liệu học JavaScript</p>
+
+    <!-- Internal CSS -->
+    <p id="html">Tài liệu học HTML</p>
+    <p class="web">Tài liệu học CSS</p>
+    <p class="web">Tài liệu học JavaScript</p>
+
+    <!-- Một số thuộc tính CSS cơ bản -->
+    <!-- Thuộc tính width & height -->
+    <div style="width: 50%; height: 100px; background-color: red;"></div>
+
+    <!-- Thuộc tính color -->
+    <p style="color: tomato;">Tomato</p>
+    <!-- RGB(r, g, b): RED - GREEN - BLUE -->
+    <p style="color: rgb(0, 0, 255);">Blue</p>
+    <p style="color: rgb(255, 0, 0);">Red</p>
+    <p style="color: rgb(241, 147, 60);">rgb(241, 147, 60)</p>
+    <!-- RGBA(r, g, b, a): RED - GREEN - BLUE - ALPHA -->
+    <p style="color: rgba(0, 0, 255, 0.5);">Blue 0.5 alpha</p>
+    <!-- HEX -->
+    <p style="color: #ff0000;">Red</p>
+    <p style="color: #ff6348;">#ff6348</p>
+
+    <!-- Thuộc tính background-color -->
+    <p style="background-color: yellow;">Tài liệu học HTML</p>
+
+    <!-- Thuộc tính border -->
+    <p style="border-style: dashed;">Học CSS thật là thú vị.</p>
+    <p style="border-style: dotted;">Học CSS thật là thú vị.</p>
+    <p style="border-style: groove;">Học CSS thật là thú vị.</p>
+    <p style="border-style: solid;">Học CSS thật là thú vị.</p>
+    <p style="border-style: solid; border-width: 3px;">Học CSS thật là thú vị.</p>
+    <p style="border-style: solid; border-width: 3px; border-color: green;">Học CSS thật là thú vị.</p>
+    <!-- Border shorthand: border: width style color; -->
+    <p style="border: 3px solid red;">Học CSS thật là thú vị.</p>
+
+    <!-- Thuộc tính font -->
+    <p style="font-size: 2em;">CSS font-size</p>
+    <p style="font-weight: 400;">CSS font-weight</p>
+    <p style="font-style: italic;">CSS font-style</p>
+    <p style="font-family: 'Courier New', Courier, monospace;">CSS font-family</p>
+
+    <!-- Thuộc tính line-height & text-indent -->
+    <p style="text-indent: 50px; line-height: 1.6;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur dolores facere explicabo expedita quis voluptates, laudantium error ea fugit illo exercitationem nihil repellat tempore doloribus beatae et sit vitae odio.</p>
+
+    <!-- Table: table, tr, th, td -->
+    <table border="1">
+        <tr>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+        </tr>
+        <tr>
+            <td>Trần Anh Đức</td>
+            <td>03/08/1993</td>
+            <td>Nam</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- rowspan: Gộp hàng -->
+    <!-- colspan: Gộp cột -->
+    <table border="1">
+        <tr>
+            <th rowspan="2">STT</th>
+            <th rowspan="2">Họ tên</th>
+            <th colspan="2">Giới tính</th>
+            <th rowspan="2">Chức vụ</th>
+        </tr>
+        <tr>
+            <th>Nam</th>
+            <th>Nữ</th>
+        </tr>
+    </table>
+</body>
+</html>

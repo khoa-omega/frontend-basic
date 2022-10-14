@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 02 - Advanced CSS</title>
+    <link rel="stylesheet" href="./advanced-css.css">
+    <style>
+        .border-green {
+            border: 1px solid green;
+        }
+        
+        .margin-70 {
+            margin: 70px;
+            /* margin: 20px 40px; */
+            /* margin: 10px 20px 30px 40px; */
+        }
+
+        .padding-70 {
+            padding: 70px;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .parent {
+            border: 1px solid red;
+            width: 400px;
+            height: 400px;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .square-blue {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body style="height: 2000px;">
+    <p class="border-green margin-70;">This element has a margin of 70px.</p>
+    <p class="border-green padding-70;">This element has a padding of 70px.</p>
+
+    <p class="border-green" style="width: 300px;">This p is 300px wide.</p>
+    <p class="border-green" style="width: 300px; padding: 0 50px; box-sizing: border-box;">This p is 300px wide.</p>
+
+    <!-- Position: static, relative, absolute, fixed, sticky -->
+    <!-- Top, Right, Bottom, Left -->
+    <!-- Static: Mặc định -->
+
+    <!-- Relative: Vị trí tương đối so với vị trí gốc của nó -->
+    <div class="square" style="position: static;"></div>
+    <br>
+    <div class="square" style="position: relative; left: 50px;"></div>
+    <br>
+
+    <!-- Absolute: Vị trí tương đối so với thẻ cha gần nhất có position != static -->
+    <div class="parent" style="position: relative;">
+        <div class="child" style="position: absolute; left: 50px; top: 50px;"></div>
+    </div>
+
+    <!-- Fixed: Vị trí so với khung trang web -->
+    <div class="square" style="position: fixed; bottom: 0px; right: 0px;"></div>
+
+    <!-- Sticky: Kết hợp giữa Relative và Fixed -->
+    <h1 style="position: sticky; top: 0px;">This is a header</h1>
+
+    <!-- Display: Hiển thị phần tử HTML -->
+    <!-- Outside: inline, block, inline-block -->
+    <!-- Inline: Độ dài phần tử = độ dài nội dung -->
+    <p style="display: inline;">Hello</p>
+    <p style="display: inline;">CSS</p>
+    <!-- Block: Độ dài phần tử = độ dài trang web -->
+    <span style="display: block;">Hello</span>
+    <span style="display: block;">HTML</span>
+    <!-- None: Ẩn phần tử HTML khởi trang web -->
+    <div class="square" style="display: none;"></div>
+    <br>
+    <!-- Flex, Grid: http://flexboxfroggy.com/#vi -->
+    <div style="display: flex; justify-content: space-evenly;">
+        <div class="column square" style="opacity: 1;"></div>
+        <div class="column square" style="opacity: 0.6;"></div>
+        <div class="column square" style="opacity: 0.2;"></div>
+    </div>
+    <br>
+    
+    <!-- Priority CSS -->
+    <!-- Phần tử HTML ưu tiên CSS gần nó nhất -->
+    <!-- External < Internal < Inline -->
+    <div class="square-blue" style="background-color: black;"></div>
+
+    <!-- Layout: Bố cục trang web -->
+    <!-- Flex, Grid, Float -->
+    <!-- Float: https://webcoban.vn/css/cach-su-dung-thuoc-tinh-float-clear-trong-css.html -->
+
+</body>
+</html>
