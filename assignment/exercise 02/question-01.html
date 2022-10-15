@@ -79,7 +79,9 @@
                 <pre style="background-color: lightgray;">
                     
                     For i = 0 To 10
-                        Tong = Tong + 1
+
+                                    Tong = Tong + 1
+
                     Next
                 </pre>
             </p>
@@ -119,35 +121,38 @@
         <br>
 
         <style>
-            table, th, td {
-                border: 2px solid blueviolet;
+            #food-table {
+                width: 450px;
+                background-color: white;
+                border: 2px solid #9b5027;
                 border-collapse: collapse;
             }
 
-            table {
-                width: 400px;
-                background-color: white;
-            }
-
             /* even, odd */
-            tr:nth-child(odd) {
+            #food-table tr:nth-child(odd) {
                 background-color: #edbba0;
             }
 
-            th, td {
+            #food-table th, td {
                 padding: 8px 16px;
             }
 
-            th {
+            #food-table th {
                 color: white;
-                background-color: brown;
+                background-color: #9b5027;
+                border: 2px solid brown;
+            }
+
+            #food-table td {
+                border: 2px solid #9b5027;
             }
         </style>
         <div class="container" style="background-color: #edbba0; padding: 16px 0;">
-            <h1 style="color: brown; text-align: center;">Các món ngon Hà Nội</h1>
-            <div style="display: flex; justify-content: space-evenly; align-items: center;">
-                <img width="160" height="139" src="https://i.pinimg.com/originals/f2/2f/55/f22f551ac50ddc001be5bc1fe5e256c0.jpg" alt="Food">
-                <table>
+            <h1 style="color: #9b5027; text-align: center;">Các món ngon Hà Nội</h1>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <!-- <img width="160" height="139" src="https://i.pinimg.com/originals/f2/2f/55/f22f551ac50ddc001be5bc1fe5e256c0.jpg" alt="Food"> -->
+                <img style="margin-right: 16px;" src="./assets/food.png" alt="Food">
+                <table id="food-table" style="margin-left: 16px;">
                     <tr>
                         <th>STT</th>
                         <th>Tên Món Ăn</th>
@@ -191,10 +196,170 @@
         <br>
 
         <style>
+            #course-table {
+                border: 2px solid pink;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+
+            #course-table th {
+                border: 2px solid pink;
+                color: white;
+                background-color: red;
+                padding: 8px 16px;
+            }
+
+            #course-table td {
+                border: 2px solid pink;
+            }
+
+            #course-table td[rowspan] {
+                text-align: center;
+            }
+        </style>
+        <div class="container">
+            <h1 style="color: red; text-align: center;">Chương trình học - ngành lập trình</h1>
+            <table id="course-table">
+                <tr>
+                    <th rowspan="2">Nhóm học phần</th>
+                    <th rowspan="2">Môn học</th>
+                    <th colspan="2">Số tiết</th>
+                </tr>
+                <tr>
+                    <th>Lý thuyết</th>
+                    <th>Thực hành</th>
+                </tr>
+                <tr>
+                    <td rowspan="6">I<br>Tin học văn phòng</td>
+                    <td>Hệ điều hành windows</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Sử dụng internet</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Soạn thảo văn bản với MS Word</td>
+                    <td>24</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Tạo bài trình diễn với MS Power Point</td>
+                    <td>9</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Xử lý số liệu với MS Excel</td>
+                    <td>24</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Tạo trang web vs Ms Fontpage</td>
+                    <td>9</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">II<br>Kỹ thuật lập trình (VB.NET)</td>
+                    <td>Nhập môn lập trình</td>
+                    <td>36</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Kỹ thuật lập trình</td>
+                    <td>36</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td colspan="4">...</td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <style>
+            #sale-table {
+                width: 600px;
+                color: darkgreen;
+                background-color: lightgreen;
+                border: 2px solid #505050;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+
+            #sale-table td {
+                border: 2px solid #505050;
+            }
+
+            #sale-table td:first-child {
+                width: 40%;
+            }
+        </style>
+        <div class="container">
+            <h1 style="color: green; text-align: center;">Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+            <table id="sale-table">
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text" placeholder="Nhập họ tên"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><input type="text" placeholder="Nhập địa chỉ"></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td><input type="text" placeholder="Nhập số điện thoại"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Nam</label>
+                        <input type="radio" id="male" name="gender" checked>
+                        <label for="male">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nghề nghiệp</td>
+                    <td>
+                        <select name="job">
+                            <option value="1" selected>Giáo viên</option>
+                            <option value="2">Công nhân</option>
+                            <option value="3">Học sinh</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn sản phẩm tham gia</td>
+                    <td>
+                        <select name="product" size="4" multiple>
+                            <option value="1" selected>Kem đánh răng</option>
+                            <option value="2">Bột giặt</option>
+                            <option value="3" selected>Dầu gội đầu</option>
+                            <option value="4">Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số người dự đoán tham gia</td>
+                    <td><input type="number" value="250000"></td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="2"><input type="submit" value="Đồng ý"></td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <style>
             .parent {
                 border: 2px solid blue;
                 width: 400px;
                 height: 400px;
+                margin: 100px auto;
             }
 
             .box {
@@ -204,6 +369,7 @@
                 position: relative;
 
                 /* Sử dụng top-left hoặc transform */
+
                 /* Câu 1: Box ở giữa trung tâm */
                 /* transform: translate(150px, 150px); */
 
