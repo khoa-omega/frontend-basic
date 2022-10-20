@@ -1,9 +1,0 @@
-#table {
-    width: 1000px;
-    cursor: pointer;
-}
-
-.selected {
-    color: white;
-    background-color: #7bed9f;
-}

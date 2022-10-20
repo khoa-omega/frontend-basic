@@ -1,0 +1,35 @@
+/* 
+    container: Tạo ra một khối bọc lại nội dung
+    text-primary: Tô màu cho text
+    fw-bold: Tô đậm text
+    fs-2: Kích thước text
+    mx-5: Margin theo chiều ngang
+    my-5: Margin theo chiều dọc
+    mt-*, ms-*, me-*, mb-*: Margin top, start, end, bottom
+*/
+
+.table-container {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+#table {
+	cursor: pointer;
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+#tbody tr {
+	transition: 0.14s;
+}
+
+#tbody tr:hover {
+	color: #fafafa;
+	background-color: #7bed9f;
+}
+
+.selected {
+	color: #fafafa;
+	background-color: #2ed573;
+}
