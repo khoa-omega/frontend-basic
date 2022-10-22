@@ -42,99 +42,99 @@ const loading = $('#loading');
 
 // Lắng nghe DOM Loaded
 $(function () {
-	addListeners();
-	loadDepartments();
+    addListeners();
+    loadDepartments();
 });
 
 function loadDepartments() {
-	$.ajax({
-		method: 'GET',
-		url: 'https://63500319df22c2af7b609f3f.mockapi.io/api/v1/departments',
-		beforeSend: function () {
-			showLoading();
-		},
-		complete: function () {
-			hideLoading();
-		},
-		success: function (data) {
-			showDepartments(data);
-		}
-	});
+    $.ajax({
+        method: 'GET',
+        url: 'https://63500319df22c2af7b609f3f.mockapi.io/api/v1/departments',
+        beforeSend: function () {
+            showLoading();
+        },
+        complete: function () {
+            hideLoading();
+        },
+        success: function (data) {
+            showDepartments(data);
+        }
+    });
 }
 
 function createDepartment() {
-	$.ajax({
-		method: 'POST',
-		url: 'https://63500319df22c2af7b609f3f.mockapi.io/api/v1/departments',
-		data: {
-			name: $('#create-name').val()
-		},
+    $.ajax({
+        method: 'POST',
+        url: 'https://63500319df22c2af7b609f3f.mockapi.io/api/v1/departments',
+        data: {
+            name: $('#create-name').val()
+        },
         beforeSend: function () {
             showLoading();
-			bootstrap.Modal.getOrCreateInstance($('#modal-create')).hide();
-		},
+            bootstrap.Modal.getOrCreateInstance($('#modal-create')).hide();
+        },
         complete: function () {
-			hideLoading();
-		},
-		success: function (data) {
-			showDepartment(data);
-		}
-	});
+            hideLoading();
+        },
+        success: function (data) {
+            showDepartment(data);
+        }
+    });
 }
 
 function updateDepartment() {
     const selectedRow = $('.selected');
-	const id = $('#update-id').val();
-	$.ajax({
-		method: 'PUT',
-		url: 'https://63500319df22c2af7b609f3f.mockapi.io/api/v1/departments/' + id,
-		data: {
-			name: $('#update-name').val()
-		},
+    const id = $('#update-id').val();
+    $.ajax({
+        method: 'PUT',
+        url: 'https://63500319df22c2af7b609f3f.mockapi.io/api/v1/departments/' + id,
+        data: {
+            name: $('#update-name').val()
+        },
         beforeSend: function () {
             showLoading();
-			bootstrap.Modal.getOrCreateInstance($('#modal-update')).hide();
-		},
+            bootstrap.Modal.getOrCreateInstance($('#modal-update')).hide();
+        },
         complete: function () {
-			hideLoading();
-		},
-		success: function (data) {
-			selectedRow.hide('fast', function () {
+            hideLoading();
+        },
+        success: function (data) {
+            selectedRow.hide('fast', function () {
                 selectedRow.find('.name').text(data.name);
                 selectedRow.show();
             });
-		}
-	});
+        }
+    });
 }
 
 function deleteDepartment() {
-	const selectedRow = $('.selected');
-	const id = selectedRow.find('.id').text();
-	$.ajax({
-		method: 'DELETE',
-		url: 'https://63500319df22c2af7b609f3f.mockapi.io/api/v1/departments/' + id,
-		beforeSend: function () {
+    const selectedRow = $('.selected');
+    const id = selectedRow.find('.id').text();
+    $.ajax({
+        method: 'DELETE',
+        url: 'https://63500319df22c2af7b609f3f.mockapi.io/api/v1/departments/' + id,
+        beforeSend: function () {
             showLoading();
-			bootstrap.Modal.getOrCreateInstance($('#modal-delete')).hide();
-		},
+            bootstrap.Modal.getOrCreateInstance($('#modal-delete')).hide();
+        },
         complete: function () {
-			hideLoading();
-		},
-		success: function (data) {
-			selectedRow.remove();
-		}
-	});
+            hideLoading();
+        },
+        success: function (data) {
+            selectedRow.remove();
+        }
+    });
 }
 
 function showDepartments(departments) {
-	for (const department of departments) {
-		showDepartment(department);
-	}
+    for (const department of departments) {
+        showDepartment(department);
+    }
 }
 
 function showDepartment(department) {
-	const createdAt = new Date(department.createdAt);
-	tbody.append(`
+    const createdAt = new Date(department.createdAt);
+    tbody.append(`
         <tr>
             <th class="id" scope="row">${department.id}</th>
             <td class="name">${department.name}</td>
@@ -152,13 +152,13 @@ function editDepartment() {
 }
 
 function addListeners() {
-	tbody.on('click', 'tr', function (event) {
-		if (event.ctrlKey) {
-			$(this).addClass('selected');
-		} else {
-			$(this).addClass('selected').siblings().removeClass('selected');
-		}
-	});
+    tbody.on('click', 'tr', function (event) {
+        if (event.ctrlKey) {
+            $(this).addClass('selected');
+        } else {
+            $(this).addClass('selected').siblings().removeClass('selected');
+        }
+    });
 
     $('#btn-add').on('click', function (event) {
         $('#create-form').trigger('reset');
@@ -168,23 +168,23 @@ function addListeners() {
         editDepartment();
     });
 
-	$('#btn-create').on('click', function (event) {
-		createDepartment();
-	});
+    $('#btn-create').on('click', function (event) {
+        createDepartment();
+    });
 
     $('#btn-update').on('click', function (event) {
-		updateDepartment();
-	});
+        updateDepartment();
+    });
 
-	$('#btn-delete').on('click', function (event) {
-		deleteDepartment();
-	});
+    $('#btn-delete').on('click', function (event) {
+        deleteDepartment();
+    });
 }
 
 function showLoading() {
-	loading.show();
+    loading.show();
 }
 
 function hideLoading() {
-	loading.hide();
+    loading.hide();
 }

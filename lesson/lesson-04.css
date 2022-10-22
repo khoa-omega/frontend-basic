@@ -14,22 +14,22 @@
 }
 
 #table {
-	cursor: pointer;
+    cursor: pointer;
     min-height: 200px;
     max-height: 200px;
     overflow-y: scroll;
 }
 
 #tbody tr {
-	transition: 0.14s;
+    transition: 0.14s;
 }
 
 #tbody tr:hover {
-	color: #fafafa;
-	background-color: #7bed9f;
+    color: #fafafa;
+    background-color: #7bed9f;
 }
 
 .selected {
-	color: #fafafa;
-	background-color: #2ed573;
+    color: #fafafa;
+    background-color: #2ed573;
 }
