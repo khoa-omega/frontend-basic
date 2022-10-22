@@ -1,6 +1,6 @@
+'use strict';
 console.log('----------------- STRICT MODE -----------------');
 // Chế độ nghiêm túc
-"use strict";
 // number = 10; // Lỗi
 let number = 10;
 console.log('number = ' + number);
@@ -19,7 +19,7 @@ console.log("I don't know.");
 console.log('"JavaScript" thật là thú vị.');
 
 console.log('----------------- STRING TEMPLATE -----------------');
-// String template: Sử dụng nháy huyền (`) 
+// String template: Sử dụng nháy huyền (`)
 // => Giống string format trong Java
 console.log('email: ' + email);
 console.log(`email: ${email}`);
@@ -35,8 +35,8 @@ let x = '100';
 let y = '10';
 console.log('x + y = ' + (x + y));
 console.log('x - y = ' + (x - y));
-console.log('x * y = ' + (x * y));
-console.log('x / y = ' + (x / y));
+console.log('x * y = ' + x * y);
+console.log('x / y = ' + x / y);
 // => Phép cộng sẽ ưu tiên cộng chuỗi
 
 console.log('----------------- NOT A NUMBER -----------------');
@@ -94,7 +94,7 @@ normal('Khoa');
 // Loại 2. Anonymous function
 let anonymous = function (name) {
     console.log('Loại 2. Anonymous function => Chào ' + name);
-}
+};
 anonymous('Khoa');
 // Loại 3. Arrow function
 let arrow = name => console.log('Loại 3. Arrow function => Chào ' + name);
@@ -146,7 +146,7 @@ console.log('dateFromString = ' + dateFromString);
 
 console.log('----------------- ARRAY -----------------');
 // Java: String[] fruits = new String[] {"apple", "mango", "orange"};
-let fruits = ["apple", "mango", "orange"];
+let fruits = ['apple', 'mango', 'orange'];
 console.log(fruits);
 console.log('fruits.length = ' + fruits.length);
 // Thêm một phần tử vào cuối mảng
@@ -281,7 +281,7 @@ if (divs != null) {
 let reds = document.getElementsByClassName('red');
 if (reds != null) {
     for (const red of reds) {
-        red.innerHTML = "Thẻ này có class red.";
+        red.innerHTML = 'Thẻ này có class red.';
     }
 }
 
